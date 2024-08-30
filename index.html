@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+
+
+    <h1>Bank account</h1>
+    <p>Власник рахунку: <span id="ownerName"></span></p>
+    <p>Номер рахунку: <span id="accountNumber"></span></p>
+    <p>Залишок: <span id="balance"></span></p>
+
+    <input type="number" id="amount" placeholder="Введіть суму">
+    <button onclick="bankAccount.deposit()">Поповнити рахунок</button>
+    <button onclick="bankAccount.withdraw()">Отримати готівку</button>
+
+    <p id="message"></p>
     
+
+    <script src="./script.js"></script>
 </body>
 </html>
